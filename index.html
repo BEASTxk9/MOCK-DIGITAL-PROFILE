@@ -35,7 +35,7 @@
       <a class="nav-link text-black" href="#skills"><i class="fa-solid fa-book"></i>SKILLS</a>
       <a class="nav-link text-black" href="#testimonial"><i class="fa-solid fa-user-graduate"></i>TESTIMONIAL</a>
       <a class="nav-link text-black" href="#projects"><i class="fa-solid fa-book"></i>PROJECTS</a>
-      <a class="nav-link text-black" href="#contact"><i class="fa-solid fa-book"></i>CONTACT</a>
+      <a class="nav-link text-black" href="#contact"><i class="fa-solid fa-book"></i>CONTACT ME</a>
      
     </div>
   </div>
@@ -58,7 +58,7 @@
           <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <img class="img-fluid" src="./images/me3.jpg" width="100%"/>
+                    <img id="me3" class="img-fluid" src="./images/me3.jpg" width="100%"/>
                 </div>
                     <div id="homesec" class="col-md-5">
                         <h2>
@@ -74,7 +74,18 @@
                             </p>
                             <p>I am very active and hardworking. I have the drive and endurance to take on any challenge for challenges are mearly an opportunity to learn. I am trustworthy, friendly, open minded, respectable and easy to approach.</p>
                         </p>
-                      
+                        <h1>CONTACT INFO</h1>
+                        <div class="row justify-content-around ">
+                            <div class="col-md-7">
+                            
+                             
+                              <p class="border border-light">Email: shanestevensxk9@gmail.com</p>
+                              <p class="border border-light">Phone NO: 067 859 6682</p>
+                              <p class="border border-light">Country: South Africa</p>
+                               <p class="border border-light">City: Cape Town</p>
+                        
+                            </div>
+                        </div>
 </div>
 
 <!-- skills -->
@@ -443,64 +454,44 @@
 
     </main>
     <footer id="contact" class="bg-black">
-        <br><br><br><br>
+        <br><br><br>
 <div class="contactsec text-center text-white">
-<h1>CONTACT INFO</h1>
-<div class="row justify-content-around ">
-    <div class="col-md-7">
-    
-     
-      <p class="border border-light">Email: shanestevensxk9@gmail.com</p>
-      <p class="border border-light">Phone NO: 067 859 6682</p>
-      <p class="border border-light">Country: South Africa</p>
-       <p class="border border-light">City: Cape Town</p>
 
-    </div>
-</div>
 <!-- form -->
 <div class="form">
-    <div class="container w-75 mx-auto text-white">
-       <h2 class="display-2">Please fill in your details</h2>
+    <div class="container-fluid w-75 mx-auto text-white">
+       <h2 class="display-2">Lets get in Contact!?</h2>
        <form action="https://formspree.io/f/xayvpewl" method="post">
    
            <!-- name -->
    
            <div class="row my-2">
-               <Label for="name" class="col-2 col-form-label-lg">Name:</Label>
+               <Label for="name" class="col-2 col-form-label-lg text-info">Name:</Label>
                <div class="col-8">
-                   <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control">
+                   <input id="name" name="name" type="text" placeholder="Enter your Name" class="form-control">
                </div>
            </div>
    
            <!-- surname -->
    
            <div class="row my-2">
-               <Label for="surname" class="col-2 col-form-label-lg">Surname:</Label>
+               <Label for="surname" class="col-2 col-form-label-lg text-info">Surname:</Label>
                <div class="col-8">
-                   <input id="name" name="name" type="text" placeholder="Enter your surname" class="form-control">
+                   <input id="name" name="name" type="text" placeholder="Enter your Surname" class="form-control">
                </div>
            </div>
    
-           <!-- age -->
+           <!-- email -->
            <div class="row my-2">
-               <Label for="age" class="col-2 col-form-label-lg">Age:</Label>
+               <Label for="age" class="col-2 col-form-label-lg text-info">Email:</Label>
                <div class="col-8">
-                   <input id="age" name="age" type="text" placeholder="Enter your age" class="form-control">
-               </div>
-           </div>
-   
-           <!-- gender -->
-           <div class="row my-2">
-               <label for="gender" class="col md-2 col-form-label-lg">Gender:</label>
-               <div class="col-8">
-                   <span class="ms-3">Male</span> <input type="radio" name="subject" id="subject">
-                   <span class="ms-3">Female</span> <input type="radio" name="subject" id="subject">
+                   <input id="email" name="email" type="text" placeholder="Enter your Email" class="form-control">
                </div>
            </div>
    
            <!-- subject -->
            <div class="row my-2">
-               <label for="subject" class="col-md-2 col-form-label-lg">Subject</label>
+               <label for="subject" class="col-md-2 col-form-label-lg text-info">Subject</label>
                <div class="col-8">
                    <select name="subject" id="suject" class="form-select">
                        <option value="html5" selected>HTML5</option>
@@ -510,9 +501,19 @@
                    </select>
                 </div>
             </div>
+
+ <!-- gender -->
+ <div class="row my-2">
+    <label for="gender" class="col md-2 col-form-label-lg text-info">Gender:</label>
+    <div class="col-8">
+        <span class="ms-3">Male</span> <input type="radio" name="subject" id="subject">
+        <span class="ms-3">Female</span> <input type="radio" name="subject" id="subject">
+    </div>
+</div>
+
             <!-- message -->
             <div class="row my-2">
-                <label for="message" class="col-md-2 col-form-label-lg">Message: </label>
+                <label for="message" class="col-md-2 col-form-label-lg text-info">Message: </label>
                 <div class="col-8 form-floating">
                     <textarea name="message" id="message" class="h-100 w-100">
                     </textarea>
@@ -523,7 +524,7 @@
                 <label class="col-md-2 col-form-label-lg"></label>
                 <div class="col-8">
                     <input type="submit" value="Submit"
-                    class="btn btn-success w-100">
+                    class="btn btn-info w-100">
                 </div>
             </div>
         </form>
@@ -533,6 +534,7 @@
            </div>
        </div>
    </div>
+   <p class="text-white">Copyrights &copy;2022</p>
     </footer>
 
 

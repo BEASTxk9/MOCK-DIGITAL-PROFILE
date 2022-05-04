@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+footer{
+    height: 100vh;
+}
+
 /* section */
 
 #homesec{
@@ -22,7 +26,7 @@ backdrop-filter: blur(1.2px);
 }
 
 .aboutsec{
-    height: 100%;
+    height: cover;
 }
 
 .skillsec{
@@ -137,4 +141,8 @@ a:hover{
 
 .img-fluid:hover{
     opacity: 1;
+}
+
+#me3{
+    height:auto;
 }
