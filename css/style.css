@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* section */
+
+#homesec{
+background: rgba(255, 255, 255, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.2px);
+-webkit-backdrop-filter: blur(1.2px);
+}
+
+.homesec{
+    height: 100vh;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aboutsec{
+    height: 100%;
+}
+
+.skillsec{
+    height: 100%;
+}
+
+.testimonialsec{
+    height: 100%;
+}
+
+body{
+    background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);
+}
+
+#testimonials{
+    margin-top: 5rem;
+    background-image: rgba(0,0,0,0.5);
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.rounded-circle{
+    border-radius: 50% !important;
+}
+
+#carousel-img:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-in-out;
+
+
+}
+
+/* nav */
+
+nav{
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.1px);
+-webkit-backdrop-filter: blur(2.1px);
+border: 1px solid rgba(255, 255, 255, 0.12);
+opacity: 0.8;
+font-size: 15px;
+}
+
+nav:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-in-out;
+    opacity:    1;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* .navspin */
+
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+/* project */
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.projectimg{
+    width: 40%;
+}
+
+.projects-container img {
+    max-height: 400px;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.projectimg:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-in-out;
+  }
+
+  /* edit */
+  .img-fluid{
+    opacity: 0.6;
+    border-radius: 20PX;
+    transition: 0.5s ease-in-out;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.img-fluid:hover{
+    opacity: 1;
+}
